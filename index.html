@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    
+    
+
+</head>
+<body>
+    <!-- header section -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <img src="images/S.png" alt="" style="width: 100%;height: 100%; object-fit: contain;">
+            </div>
+
+            <div CLASS="nav-links">
+                <a href="#home" class="anchor"><i class="fa-solid fa-house"></i>HOME</a>
+                <a href="#about" class="anchor"><i class="fas fa-user"></i></i>ABOUT</a>
+                <a href="#skilss" class="anchor"><i class="fas fa-wrench"></i>SKILLS</a>
+                <a href="#projects" class="anchor"><i class="fas fa-folder-open"></i>PROJECTS</a>
+                <a href="#contact-section" class="anchor"><i class="fa-solid fa-address-card"></i>CONTACT</a>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- core section -->
+     <section class="core" id="home">
+        
+         
+        <div class="core-content">
+             <video src="videos/javascriptbackgroubdvideo.mp4" autoplay loop muted playsinline width="100%" height="100%"></video>
+             <div class="core-text">
+                <h1 >FULL STACK DEVELOPER</h1>
+                <h3>Building robust web applications with Java Spring & Modern Frontend Technologies</h3>
+                <button onclick="showResume()" >VEIW RESUME</button>
+             </div>
+             
+             <div class="resume" style="display: none;" id="resumecontainer">
+                 <button onclick="closeResume()">Close Resume</button>
+                 <iframe src="SandeepNaikResume.pdf" frameborder="0"></iframe>
+             </div>
+        </div>
+
+     </section>
+
+<!-- about section -->
+    <section id="about">
+        <div class="about-container">
+           
+            <div class="about-content">
+            <h2>About Me</h2>
+                <p style="margin-left: 40px;">Hello! I'm <strong>Sandeep</strong>, a passionate BCA graduate with a love for web development and clean UI design.</p>
+                <p style="margin-left: 40px;">I enjoy building dynamic websites using <strong>HTML, CSS, JavaScript</strong> and backend technologies. I'm constantly learning and looking for new challenges.</p>
+                <ul class="about-highlights">
+                    <li><i class="fas fa-code"></i> Frontend & Backend Web Development</li>
+                    <li><i class="fas fa-graduation-cap"></i> BCA Graduate</li>
+                    <li><i class="fas fa-laptop-code"></i> Java, JSP, Servlets, JDBC</li>
+                    <li><i class="fas fa-lightbulb"></i> Quick Learner & Team Player</li>
+                </ul>
+            </div>
+
+             <div class="about-image">
+                <img src="images/me-removebg-preview.png" alt="Your Name">
+            </div>
+        </div>
+    </section>
+
+
+
+     <!-- skilss section -->
+      <section class="skilss" id="skilss">
+            <div class="div-container">
+                <h1 style="text-align: center;margin-bottom: 50px;font-size: 50px; color: #eceef1;"><b>Technical Skills</b></h1>
+                <div class="skilss-grid" style="display: flex; gap: 30px;flex-wrap: wrap;" >
+                    <div class="skilss-div">
+                       <i class="fa-brands fa-java" style="font-size: 80px;"></i>
+                        <div>
+                             <h5>JAVA</h5>
+                             <p>Opps,Core Java,Advanced Java</p>
+                        </div>
+                       
+                    </div>
+                     <div class="skilss-div">
+                              <i class="fa-brands fa-html5" style="font-size: 80PX;"></i>
+                                <div>
+                                    <h5>HTML</h5>
+                                </div>
+                    </div>
+                    <div class="skilss-div">
+                               <i class="fa-brands fa-css3-alt" style="font-size: 80PX;"></i>
+                                <div>
+                                     <h5>CSS</h5>
+                                     
+                                </div>
+                    </div>
+                    <div class="skilss-div">
+                               <i class="fa-brands fa-js" style="font-size: 80PX;"></i>
+                                <div>
+                                     <h5>JAVASCRIPT</h5>
+                                     
+                                </div>
+                    </div>
+                    <div class="skilss-div">
+                               <p><i class="devicon-mysql-plain-wordmark" style="font-size: 80PX; color: black;" class="mysql"></i></p>
+                                <div>
+                                     <h5>Mysql</h5>
+                                </div>
+                    </div>
+                    <div class="skilss-div">
+                                <img src="https://miro.medium.com/v2/resize:fit:400/0*jba3dz1j64rfhl5i.jpg" alt=""style="width: 100%;height=100%; object-fit: cover;">          
+                    </div>
+                    <div class="skilss-div">
+                               <img src="https://miro.medium.com/v2/resize:fit:490/0*vNyIPRa91s2QrIQy.png" alt=""style="width: 100%;height=100%">
+                    </div>
+                     <div class="skilss-div">
+                               <i class="fa-solid fa-screwdriver-wrench" style="font-size: 80px;"></i>
+                                <div>
+                                     <h5>DEVLOPER TOOLS</h5>
+                                     <p>Eclipse,VS Code</p>
+                                </div>
+                    </div>
+                </div>
+
+            </div>
+      </section>
+
+      <!-- projects section -->
+      <section class="projects-section" id="projects">
+            <div class="projects-div-container">
+                <h1 style="text-align: center; font-size: 50px; margin-bottom: 30px;">Featured Projects</h1>
+                <div class="projects-grid">
+                    <div class="projects-card" id="food-app"onclick="showProjectDetails('projectPopup1')">
+                        <div class="project-images">
+                            <img src="images/Food-App.png" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="projects-content">
+                            <h3>FOOD APP</h3>
+                            <p>A Full Stack Food Delivery application Built With Java</p>
+                        </div>
+                    </div>
+
+                    <div class="projects-card" onclick="showProjectDetails('projectPopup2')">
+                        <div class="project-images">
+                            <img src="images/JS-TIC-TAC-TOE.png" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="projects-content">
+                            <h3>Tic-Tac-Toe</h3>
+                            <p>A Simple game You Can Play With Your Friends</p>
+                        </div>
+                    </div>
+
+                    <div class="projects-card"  onclick="showProjectDetails('projectPopup3')">
+                        <div class="project-images">
+                            <img src="images/Student-Attendance.png" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="projects-content">
+                            <h3>Student-Attendnace-ManageMent-System</h3>
+                            <p>In this system you can manage and take student attendance</p>
+                        </div>
+                    </div>
+                    <div class="projects-card">
+                        <div class="project-images">
+                            <img src="images/Tic-tac-Toe.png" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="projects-content">
+                            <h3>TIC-TAC-TOE</h3>
+                            <p>its a simple game using only java ,int this game you can play with your friend or ai</p>
+                        </div>
+                    </div>
+                   
+                    
+                </div>
+            </div>
+            
+            <!-- PROJECT-POPUP 1 -->
+            <div id="projectPopup1" class="popup-overlay" style="display: none;">
+                <div class="popup-content">
+                    <span class="close-btn" onclick="closePopup('projectPopup1')">&times;</span>
+                    <div class="popup-grid">
+                        <div class="popup-left">
+                            <img id="popupImage" src="images/Food-App.png" alt="Project Image">
+                            <h2 id="popupTitle">FOOD-APP</h2>
+                            <a href="https://github.com/SandeepNaik12/Food-App">Click Here To View Code</a>
+                        </div>
+                        <div class="popup-right">
+                            <h3>Project Description</h3>
+                            <p id="popupDescription">This food ordering web app uses Java (JSP/Servlets) for the backend and HTML/CSS for the frontend. Users can browse restaurants, add items to cart, choose delivery addresses, and place orders. Admins can manage menus and track orders. The UI is clean and inspired by platforms like Swiggy, with MySQL used for data management.</p>
+                            <div class="features">
+                                <h3>Key Features</h3>
+                                <ul>
+                                    <li>User authentication and authorization</li>
+                                    <li>Browse Restaurants & Menus</li>
+                                    <li>Add to Cart & Manage Cart</li>
+                                    <li>Multiple Payment Options</li>
+                                    <li>Ordering item</li>
+                                    <li>Order Tracking & History</li>
+                                    <li>Manage User Profile</li>
+
+                                </ul>
+                            </div>
+                            <div class="tecnologies">
+                                <h3>Technologies Used</h3>
+                                <div class="tec-icons">
+                                    <div>
+                                        <i class="fa-brands fa-java" style="font-size: 80px;"></i>
+                                        <h4>JAVA</h4>
+                                    </div>
+                                    <div>
+                                         <i class="fa-brands fa-html5" style="font-size: 80PX;"></i>
+                                        <h4>HTML</h4>
+                                    </div>
+                                    <div>
+                                        <i class="fa-brands fa-css3-alt" style="font-size: 80PX;"></i>
+                                        <h4>CSS</h4>
+                                    </div>
+                                     <div>
+                                         <i class="fa-brands fa-js" style="font-size: 80PX;"></i>
+                                        <h4>JAVASCRIPT</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECT POPUP 2 -->
+            <div id="projectPopup2" class="popup-overlay" style="display: none;">
+                <div class="popup-content">
+                    <span class="close-btn" onclick="closePopup('projectPopup2')">&times;</span>
+                    <div class="popup-grid">
+                        <div class="popup-left">
+                            <img id="popupImage" src="images/JS-TIC-TAC-TOE.png" alt="Project Image">
+                            <h2 id="popupTitle">TIC-TAC-TOE</h2>
+                            <a href="https://sandeepnaik12.github.io/Tic-Tac-Toe/">Click Here To View Code</a>
+                        </div>
+                        <div class="popup-right">
+                            <h3>Project Description</h3>
+                            <p id="popupDescription">This is a simple Tic-Tac-Toe game built using JavaScript, HTML, and CSS. It features a clean, responsive UI where two players take turns marking X and O on a 3x3 grid. The game detects wins, draws, and allows easy reset for replay.</p>
+                            <div class="features">
+                                <h3>Key Features</h3>
+                                <ul>
+                                    <li>Two-Player Mode</li>
+                                    <li>Win & Draw Detection</li>
+                                    <li>Responsive Design</li>
+                                </ul>
+                            </div>
+                            <div class="tecnologies">
+                                <h3>Technologies Used</h3>
+                                <div class="tec-icons">
+                                    <div>
+                                         <i class="fa-brands fa-html5" style="font-size: 80PX;"></i>
+                                        <h4>HTML</h4>
+                                    </div>
+                                    <div>
+                                        <i class="fa-brands fa-css3-alt" style="font-size: 80PX;"></i>
+                                        <h4>CSS</h4>
+                                    </div>
+                                     <div>
+                                         <i class="fa-brands fa-js" style="font-size: 80PX;"></i>
+                                        <h4>JAVASCRIPT</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+              <!-- PROJECT POPUP 3 -->
+            <div id="projectPopup3" class="popup-overlay" style="display: none;">
+                <div class="popup-content">
+                    <span class="close-btn" onclick="closePopup('projectPopup3')">&times;</span>
+                    <div class="popup-grid">
+                        <div class="popup-left">
+                            <img id="popupImage" src="images/Student-Attendance.png" alt="Project Image">
+                            <h2 id="popupTitle">STUDENT ATTENDANCE MANAGEMENT</h2>
+                            <a href="https://github.com/SandeepNaik12/Student-Attendance">Click Here To View Code</a>
+                        </div>
+                        <div class="popup-right">
+                            <h3>Project Description</h3>
+                            <p id="popupDescription">Student Attendance Management System is a web-based project designed to track and manage student attendance efficiently. Built using technologies like PHP, HTML, CSS, and MySQL, it allows teachers to mark attendance, view records, and generate reports. The system ensures accurate record-keeping, reduces manual work, and improves transparency in attendance tracking.</p>
+                            <div class="features">
+                                <h3>Key Features</h3>
+                                <ul>
+                                    <li>Student Registration & Login</li>
+                                    <li>Teacher/Admin Panel</li>
+                                    <li>Attendance Marking</li>
+                                    <li>Attendance Reports</li>
+                                    <li>Dashboard Overview</li>
+                                    <li>Attendance Marking</li>
+                                    <li>Database Integration</li>
+
+                                </ul>
+                            </div>
+                            <div class="tecnologies">
+                                <h3>Technologies Used</h3>
+                                <div class="tec-icons">
+                                    <div>
+                                        <i class="fa-brands fa-php" style="font-size: 80PX;"></i>
+                                        <h4>PHP</h4>
+                                    </div>
+                                    <div>
+                                         <i class="fa-brands fa-html5" style="font-size: 80PX;"></i>
+                                        <h4>HTML</h4>
+                                    </div>
+                                    <div>
+                                        <i class="fa-brands fa-css3-alt" style="font-size: 80PX;"></i>
+                                        <h4>CSS</h4>
+                                    </div>
+                                     <div>
+                                         <i class="fa-brands fa-js" style="font-size: 80PX;"></i>
+                                        <h4>JAVASCRIPT</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+   <!-- Popup Modal -->
+
+   <section class="contact-section "id="contact-section">
+       
+          <div class="contact-container">
+    <!-- Form -->
+    <form id="contact-form" method="POST" action="https://api.web3forms.com/submit">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="4" placeholder="Share your thoughts" required></textarea>
+
+      <button type="submit" class="submit-btn">SHARE YOUR FEEDBACK</button>
+      <div class="status" id="form-status"></div>
+    </form>
+
+    <!-- Text -->
+    <div>
+      <div class="contact-text">Contact <br> Us</div>
+      <div class="contact-desc">
+        It is very important for us to keep in touch with you, so we are always ready to answer any question that interests you. Shoot!
+      </div>
+    </div>
+  </div>
+
+   </section>
+
+<script>
+  const form = document.querySelector("form");
+  const status = document.getElementById("form-status");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault(); // stop page from reloading
+
+    status.innerHTML = "Sending...";
+
+    const data = new FormData(form);
+    data.append("access_key", "6aa72996-b0cb-4fb3-88c8-12080549cf79"); // replace with your real Web3Forms key
+
+    fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: data
+    })
+    .then(response => response.json())
+    .then(result => {
+      if (result.success) {
+        status.innerHTML = "✅ Message sent successfully!";
+        form.reset();
+      } else {
+        status.innerHTML = "❌ Failed to send. Try again.";
+      }
+    })
+    .catch(error => {
+      status.innerHTML = "❌ Network error. Please try later.";
+    });
+  });
+</script>
+
+
+<script>
+    function showResume()
+    {
+        document.getElementById("resumecontainer").style.display="block";
+    }
+    function closeResume()
+    {
+        document.getElementById("resumecontainer").style.display="none";
+    }
+    function showProjectDetails(project)
+    {
+        document.getElementById(project).style.display="flex";
+    }
+    function closePopup(project)
+    {
+        document.getElementById(project).style.display="none";
+    }
+</script>
+</body>
+</html>
