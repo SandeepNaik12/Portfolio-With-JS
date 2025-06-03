@@ -21,11 +21,11 @@
             </div>
 
             <div CLASS="nav-links">
-                <a href="#home" class="anchor"><i class="fa-solid fa-house"></i>HOME</a>
-                <a href="#about" class="anchor"><i class="fas fa-user"></i></i>ABOUT</a>
-                <a href="#skilss" class="anchor"><i class="fas fa-wrench"></i>SKILLS</a>
-                <a href="#projects" class="anchor"><i class="fas fa-folder-open"></i>PROJECTS</a>
-                <a href="#contact-section" class="anchor"><i class="fa-solid fa-address-card"></i>CONTACT</a>
+                <a  class="anchor" onclick="navscroll('home')"><i class="fa-solid fa-house"></i>HOME</a>
+                <a  class="anchor"onclick="navscroll('skilss')"><i class="fas fa-wrench"></i>SKILLS</a>
+                <a  class="anchor"onclick="navscroll('projects')"><i class="fas fa-folder-open"></i>PROJECTS</a>
+                <a  class="anchor"onclick="navscroll('contact-section')"><i class="fa-solid fa-address-card"></i>CONTACT</a>
+                <a  class="anchor"onclick="navscroll('about')"><i class="fas fa-user"></i></i>ABOUT</a>
 
             </div>
         </nav>
@@ -327,7 +327,7 @@
                 </div>
             </div>
         </section>
-   <!-- Popup Modal -->
+ 
 
    <section class="contact-section "id="contact-section">
        
@@ -401,6 +401,11 @@
     function closePopup(project)
     {
         document.getElementById(project).style.display="none";
+    }
+    function navscroll(id)
+    {
+        console.log("hi")
+        document.getElementById(id).scrollIntoView({behavior:"smooth"})
     }
 </script>
 </body>
