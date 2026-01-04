@@ -520,12 +520,15 @@ body {
       .core-text h3{
            position: absolute;
           left:10%;
-          top: 45%; 
+          top: 35%; 
           font-size: 11px;
           color: white;
                   }
       .core-text h1{
         font-size: 20px;
+        position: absolute;
+        left: 10%;
+        top:30%;
       }
       .core-text button{
           top: 50%;
@@ -537,5 +540,9 @@ body {
           border-radius: 50%;
           border: 2px solid white;
           overflow: hidden;
-}
+      }
+      .contact-container{
+        display: flex;
+        flex-direction: column-reverse;
+      }
     }

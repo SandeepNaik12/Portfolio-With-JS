@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sandeep Naik Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
@@ -166,13 +166,13 @@
                             <p>In this system you can manage and take student attendance</p>
                         </div>
                     </div>
-                    <div class="projects-card">
+                    <div class="projects-card" onclick="showProjectDetails('projectPopup4')">
                         <div class="project-images">
-                            <img src="images/Tic-tac-Toe.png" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+                            <img src="images/ecommerce-project.png" alt="Image not found" style="width: 100%; height: 100%; object-fit: cover;">
                         </div>
                         <div class="projects-content">
-                            <h3>TIC-TAC-TOE</h3>
-                            <p>its a simple game using only java ,int this game you can play with your friend or ai</p>
+                            <h3>E-Commerce</h3>
+                            <p>its an ecommerce site in that user can experience features like flipcart</p>
                         </div>
                     </div>
                    
@@ -326,6 +326,63 @@
                     </div>
                 </div>
             </div>
+
+            <div id="projectPopup4" class="popup-overlay" style="display: none;">
+                <div class="popup-content">
+                    <span class="close-btn" onclick="closePopup('projectPopup4')">&times;</span>
+                    <div class="popup-grid">
+                        <div class="popup-left">
+                            <img id="popupImage" src="images/ecommerce-project.png" alt="Project Image">
+                            <h2 id="popupTitle">E-COMMERCE</h2>
+                            <a href="https://github.com/SandeepNaik12/Student-Attendance">Click Here To View Code</a>
+                        </div>
+                        <div class="popup-right">
+                            <h3>Project Description</h3>
+                            <p id="popupDescription">This e-commerce website, built using Java, JSP, Servlets, JavaScript and MySQL, offers a smooth online shopping experience. Users can browse
+                                products by category, use a live search bar with suggestions, and view detailed product pages. The site includes user login, cart management,
+                                and secure ordering. Features like address management, order history, Razorpay payment integration, and payment confirmation modals
+                                enhance usability.
+                            </p>
+                            <div class="features">
+                                <h3>Key Features</h3>
+                                <ul>
+                                    <li>User &  Admin Login</li>
+                                    <li>User/Admin Profile</li>
+                                    <li>Search  Product</li>
+                                    <li>Add to  Cart</li>
+                                    <li>CheckOut  Features</li>
+                                    <li>Payment Option</li>
+                                    <li>Database Integration</li>
+
+                                </ul>
+                            </div>
+                            <div class="tecnologies">
+                                <h3>Technologies Used</h3>
+                                <div class="tec-icons">
+                                    <div>
+                                        <i class="fa-brands fa-java" style="font-size: 80PX;"></i>
+                                        <h4>JAVA</h4>
+                                    </div>
+                                    <div>
+                                         <i class="fa-brands fa-html5" style="font-size: 80PX;"></i>
+                                        <h4>HTML</h4>
+                                    </div>
+                                    <div>
+                                        <i class="fa-brands fa-css3-alt" style="font-size: 80PX;"></i>
+                                        <h4>CSS</h4>
+                                    </div>
+                                     <div>
+                                         <i class="fa-brands fa-js" style="font-size: 80PX;"></i>
+                                        <h4>JAVASCRIPT</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </section>
  
 
